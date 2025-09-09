@@ -2,7 +2,11 @@
 
 var run = new Solution();
 
-run.RomanToInt("MCMXCIV");
+run.RomanToInt("MCMXCIV"); // MCMXCIV = 1994
+run.RomanToInt("III"); // III = 3
+run.RomanToInt("DCCXCIX"); // DCCXCIX = 799
+run.RomanToInt("MMDCCCLXXXV"); // MMDCCCLXXXV = 2885 
+run.RomanToInt("MMMDCCLXXIX"); //MMMDCCLXXIX = 3779
 public class Solution
 {
     public int RomanToInt(string s)
@@ -149,7 +153,7 @@ public class Solution
 
             }
         }
-
+        Console.WriteLine($"{s} should convert to {total}");
         return total;
 
     }
